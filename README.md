@@ -17,5 +17,7 @@ On stocke les {B} prédictions de la variable d'intérêt pour chaque observatio
 La prédiction de la forêt aléatoire est alors un simple vote majoritaire (Ensemble learning).
 
 Randomforest=somme(arbre décisionnel)
+
 Each classifier(tree), individually, is a “weak learner,” while all the classifiers taken together are a “strong learner”.
+
 More information here: https://stat.ethz.ch/education/semesters/ss2012/ams/slides/v10.2.pdf
