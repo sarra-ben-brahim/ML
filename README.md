@@ -12,8 +12,9 @@ Créer {B} nouveaux ensembles d'apprentissage par un double processus d'échanti
 **sur les observations, en utilisant un tirage avec remise d'un nombre {N} d'observations identique à celui des données d'origine
 ( bootstrap)
 
-**Et sur les {p} prédicteurs, en n'en retenant qu'un échantillon 
-Sur chaque échantillon, on entraîne un arbre de décision selon une des techniques connues, en limitant sa croissance par validation croisée.(overfitting)
+**Et sur les {p} prédicteurs, en n'en retenant qu'un échantillon .
+
+  Sur chaque échantillon, on entraîne un arbre de décision selon une des techniques connues, en limitant sa croissance par validation croisée.(overfitting)
 On stocke les {B} prédictions de la variable d'intérêt pour chaque observation d'origine.
 La prédiction de la forêt aléatoire est alors un simple vote majoritaire (Ensemble learning).
 
