@@ -16,7 +16,11 @@ Créer {B} nouveaux ensembles d'apprentissage par un double processus d'échanti
 Sur chaque échantillon, on entraîne un arbre de décision selon une des techniques connues, en limitant sa croissance par validation croisée.(overfitting)
 On stocke les {B} prédictions de la variable d'intérêt pour chaque observation d'origine.
 La prédiction de la forêt aléatoire est alors un simple vote majoritaire (Ensemble learning).
+Each tree is grown as follows:
 
+1. Random Record Selection : Each tree is trained on roughly 2/3rd of the total training data (exactly 63.2%) . Cases are drawn at random with replacement from the original data. This sample will be the training set for growing the tree.
+
+2. Random Variable Selection : Some predictor variables (say, m) are selected at random out of all the predictor variables and the best split on these m is used to split the node.
 Randomforest=somme(arbre décisionnel).
 
 Each classifier(tree), individually, is a “weak learner,” while all the classifiers taken together are a “strong learner”.
